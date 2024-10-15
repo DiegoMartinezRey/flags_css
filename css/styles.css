@@ -31,13 +31,27 @@ body {
 }
 
 .container {
-  width: 900px;
-  height: 600px;
-  background-color: #333333;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.container-groups-flags {
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.lineal-container {
+  width: 900px;
+  height: 600px;
+}
+
+.text {
+  text-align: center;
 }
 
 .group-flags {
@@ -84,4 +98,43 @@ body {
     linear-gradient(151deg, #d62727 60%, transparent 60%),
     linear-gradient(168deg, white 80%, transparent 80%),
     linear-gradient(180deg, #007a3c 100%, transparent 100%);
+}
+
+.radial-container {
+  width: 900px;
+  height: 900px;
+}
+
+.flag7 {
+  background-image: radial-gradient(circle, #bc012c 40%, white 40%);
+}
+.flag8 {
+  background-image: radial-gradient(
+    circle at 40% 50%,
+    #ffde01 30%,
+    #49add6 30%
+  );
+}
+.flag9 {
+  background-image: linear-gradient(#ce1226 25%, transparent 25%),
+    linear-gradient(transparent 75%, #ce1226 75%),
+    radial-gradient(circle, white 30%, #002868 30%);
+}
+
+.rainbow-flag {
+  width: 700px;
+  height: 500px;
+  border: 1px solid white;
+  background-image: radial-gradient(
+    circle at bottom center,
+    transparent 25%,
+    red 25% 30%,
+    orange 30% 35%,
+    yellow 35% 40%,
+    green 40% 45%,
+    blue 45% 50%,
+    purple 50% 55%,
+    pink 55% 60%,
+    transparent 60%
+  );
 }
