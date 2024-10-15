@@ -26,4 +26,62 @@ img {
 body {
   margin: 0;
   font-family: sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  width: 900px;
+  height: 600px;
+  background-color: #333333;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.group-flags {
+  display: flex;
+}
+
+.flag {
+  width: 250px;
+  height: 200px;
+  border: 1px solid white;
+  margin: 5px;
+}
+
+.flag1 {
+  background-image: linear-gradient(#d90011 33%, #0133a0 33% 66%, #f2a801 66%);
+}
+.flag2 {
+  background-image: linear-gradient(
+    to right,
+    black 33%,
+    #fae041 33% 66%,
+    #ed2938 66%
+  );
+}
+.flag3 {
+  background-image: linear-gradient(
+    #75aadb 35%,
+    white 35% 40%,
+    black 40% 60%,
+    white 60% 65%,
+    #75aadb 65%
+  );
+}
+.flag4 {
+  background-image: linear-gradient(to right, #028751 40%, transparent 40%),
+    linear-gradient(#ffff00 50%, red 50%);
+}
+.flag5 {
+  background-image: linear-gradient(135deg, green 40%, yellow 40% 60%, red 60%);
+}
+.flag6 {
+  background-image: linear-gradient(120deg, blue 25%, transparent 25%),
+    linear-gradient(135deg, #fcd755 45%, transparent 45%),
+    linear-gradient(151deg, #d62727 60%, transparent 60%),
+    linear-gradient(168deg, white 80%, transparent 80%),
+    linear-gradient(180deg, #007a3c 100%, transparent 100%);
 }
